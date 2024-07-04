@@ -25,7 +25,7 @@ Note (green is not connected)
 Then connect with putty, serial port of usb2uart, baud rate 115200.
 
 I was very surprised that it is an esp32 wroom and there is a partition with spiffs.
-[
+
 C (220) : ********************** INIT **********************
 C (223) : *
 C (225) : *                  Board T009_3
@@ -66,8 +66,7 @@ I (376) FS: >> www/sta.html .... 2208
 I (380) FS: >> www/sta.js .... 5040
 I (386) FS: >> www/w3.css .... 23308
 I (401) FS:
-   43932 bytes in 8 file(s)
- ]
+   43932 bytes in 8 file(s)]
  
 and here is the complete log.
 
