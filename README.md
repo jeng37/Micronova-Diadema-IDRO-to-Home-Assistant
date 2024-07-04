@@ -4,7 +4,7 @@ Total-Control-app-to-HA
 
 What has happened so far.
 
-I can still record when something is sent to the public.
+I can still record when something is sent to the stove.
 It's just that my programming knowledge is outdated (rusty).
 Well, here's what I've found out so far.
 
