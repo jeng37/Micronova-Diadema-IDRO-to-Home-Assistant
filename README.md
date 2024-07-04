@@ -13,3 +13,10 @@ And found 3 pins on the ESP32.
 Picture 
 ![ESP32_Pins](https://github.com/jeng37/Total-Control-app-to-HA/assets/12857791/8f61cc9c-6878-4c8d-9441-ce4cbc64a04e)
 
+GND is drawn, just need to find rx and tx.
+So in my case now (Blue = GND, Orange = RX, Yellow = TX)
+You need a 3.3v usb2uart.
+
+![ESP32_Usb2UART](https://github.com/jeng37/Total-Control-app-to-HA/assets/12857791/95634655-ef08-4f44-b724-3371b0c79307)
+
+![usb2uart_Pin_Def](https://github.com/jeng37/Total-Control-app-to-HA/assets/12857791/fa2f1ced-ec19-4db5-8c58-adb0dc21e0f7)
