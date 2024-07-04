@@ -8,6 +8,12 @@ I can still record when something is sent to the stove.
 It's just that my programming knowledge is outdated (rusty).
 Well, here's what I've found out so far.
 
+
+Total Control
+https://totalcontrol.extraflame.it
+or the new one i found in this log,
+http://wifi.extraflame.it
+
 I opened the wifi adapter (white label).
 And found 3 pins on the ESP32.
 
