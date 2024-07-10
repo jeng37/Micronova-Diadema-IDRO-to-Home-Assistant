@@ -35,5 +35,11 @@ I was very surprised that it is an esp32 wroom and there is a partition with spi
 [extraflame.txt](https://github.com/user-attachments/files/16098214/extraflame.txt)
 
 
+Unfortunately I can't make a backup of the esp. I always get the error message
+A fatal error occurred: Failed to connect to ESP32: No serial data received.
+
+esptool -p COM7 -b 115200 read_flash 0 0x400000 flash.bin
+
+Instructions [here](https://jmswrnr.com/blog/hacking-a-smart-home-device#dumping-flash)
+
 That's the status so far.
-I would be happy about help.
