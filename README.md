@@ -61,5 +61,5 @@ changed some variables and it´s running.
    
 My Stove model is "Extraflame Diadema IDRO"
 
-<img src="Diadema_IDRO.jpg"  Home Assistant data-canonical-src="https://github.com/jeng37/Total-Control-app-to-HA/blob/main/Diadema_IDRO.jpg" width="800" height="800" />
+<img src="Diadema_IDRO.jpg"  Home Assistant data-canonical-src="https://github.com/jeng37/Total-Control-app-to-HA/blob/main/Diadema_IDRO.jpg" width="800" height="400" />
 
