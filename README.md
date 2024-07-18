@@ -1,6 +1,6 @@
 Total-Control-app-to-HA
 
-"uncloud" Extraflame NAVEL 2.0 Wifi Modul to Home Assistant.
+"uncloud" La Nordica Extraflame Dadema IDRO / NAVEL 2.0 Wifi Modul to Home Assistant.
 
 What has happened so far.
 
