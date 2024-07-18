@@ -17,22 +17,22 @@ http://wifi.extraflame.it
 I opened the wifi adapter (white label).
 And found 3 pins on the ESP32.
 
-![ESP32_Pins](https://github.com/jeng37/Total-Control-app-to-HA/assets/12857791/8f61cc9c-6878-4c8d-9441-ce4cbc64a04e)
+[ESP32_Pins]ESP32_Pins.jpg)
 
 GND is drawn, just need to find rx and tx.
 So in my case now (Blue = GND, Orange = RX, Yellow = TX)
 You need a 3.3v usb2uart.
 Note (green is not connected)
 
-![ESP32_Usb2UART](https://github.com/jeng37/Total-Control-app-to-HA/assets/12857791/95634655-ef08-4f44-b724-3371b0c79307)
+[ESP32_Usb2UART](ESP32_UsbUART.jpg)
 
-![usb2uart_Pin_Def](https://github.com/jeng37/Total-Control-app-to-HA/assets/12857791/fa2f1ced-ec19-4db5-8c58-adb0dc21e0f7)
+[usb2uart_Pin_Def](ESP32_Pin_Def.jpg)
 
 Then connect with putty, serial port of usb2uart, baud rate 115200.
 
 I was very surprised that it is an esp32 wroom and there is a partition with spiffs.
 
-[extraflame.txt](https://github.com/user-attachments/files/16098214/extraflame.txt)
+[extraflame.txt](extraflame.txt)
 
 
 Unfortunately I can't make a backup of the esp. I always get the error message
@@ -56,9 +56,10 @@ Joris S ](https://github.com/Jorre05/micronova)
 and installed it on a Wemos d1 mini.
 changed some variables and it´s running.
 
-[Diadema_IDRO](https://github.com/jeng37/Total-Control-app-to-HA/blob/main/Diadema_IDRO.txt) read write locations.
+[Diadema_IDRO](Diadema_IDRO.txt) read write locations.
    
    
 My Stove model is "Extraflame Diadema IDRO"
 
-[Diadema_IDRO](https://github.com/jeng37/Total-Control-app-to-HA/blob/main/Diadema_IDRO.jpg)
+[Diadema_IDRO](Diadema_IDRO.jpg)
+
