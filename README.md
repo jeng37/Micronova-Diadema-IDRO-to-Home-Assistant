@@ -26,7 +26,7 @@ Note (green is not connected)
 
 <img src="ESP32_Usb2UART.jpg" data-canonical-src="https://github.com/jeng37/Total-Control-app-to-HA/blob/main/ESP32_Usb2UART.jpg" width="800" height="800" />
 
-<img src="ESP32_Pin_Dev.jpg" data-canonical-src="https://github.com/jeng37/Total-Control-app-to-HA/blob/main/ESP32_Pin_Def.jpg width="800" height="800" />
+<img src="ESP32_Pin_Def.jpg" data-canonical-src="https://github.com/jeng37/Total-Control-app-to-HA/blob/main/ESP32_Pin_Def.jpg" width="800" height="800" />
 
 Then connect with putty, serial port of usb2uart, baud rate 115200.
 
