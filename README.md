@@ -60,4 +60,4 @@ changed some varialbes and it´s running.
    
 My Stove model is "Extraflame Diadema IDRO"
 
-![Diadema_IDRO](https://github.com/user-attachments/assets/951c66a8-a065-4c28-833b-a59ddfb36986)
+[Diadema_IDRO](https://github.com/jeng37/Total-Control-app-to-HA/blob/main/Diadema_IDRO.jpg)
