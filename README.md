@@ -61,5 +61,5 @@ changed some variables and it´s running.
    
 My Stove model is "Extraflame Diadema IDRO"
 
-[Diadema_IDRO](https://github.com/jeng37/Total-Control-app-to-HA/blob/main/Diadema_IDRO.jpg)
+[Diadema_IDRO] Home Assistant (https://github.com/jeng37/Total-Control-app-to-HA/blob/main/Diadema_IDRO.jpg)
 
