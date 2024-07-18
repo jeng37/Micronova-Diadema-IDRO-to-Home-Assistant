@@ -24,7 +24,7 @@ So in my case now (Blue = GND, Orange = RX, Yellow = TX)
 You need a 3.3v usb2uart.
 Note (green is not connected)
 
-[ESP32_Usb2UART](ESP32_UsbUART.jpg)
+[ESP32_Usb2UART](../ESP32_UsbUART.jpg)
 
 [usb2uart_Pin_Def](ESP32_Pin_Def.jpg)
 
