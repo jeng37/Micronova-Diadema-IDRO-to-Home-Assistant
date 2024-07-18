@@ -17,16 +17,16 @@ http://wifi.extraflame.it
 I opened the wifi adapter (white label).
 And found 3 pins on the ESP32.
 
-<img src="ESP32_Pins.jpg" data-canonical-src="https://github.com/jeng37/Total-Control-app-to-HA/blob/main/ESP32_Pins.jpg" width="800" height="800" />
+<img src="ESP32_Pins.jpg" data-canonical-src="https://github.com/jeng37/Total-Control-app-to-HA/blob/main/ESP32_Pins.jpg"  width="800" height="800" />
 
 GND is drawn, just need to find rx and tx.
 So in my case now (Blue = GND, Orange = RX, Yellow = TX)
 You need a 3.3v usb2uart.
 Note (green is not connected)
 
-[ESP32_Usb2UART](https://github.com/jeng37/Total-Control-app-to-HA/blob/main/ESP32_Usb2UART.jpg)
+<img src="ESP32_Usb2UART.jpg" data-canonical-src="https://github.com/jeng37/Total-Control-app-to-HA/blob/main/ESP32_Usb2UART.jpg" width="800" height="800" />
 
-[usb2uart_Pin_Def](https://github.com/jeng37/Total-Control-app-to-HA/blob/main/ESP32_Pin_Def.jpg)
+<img src="ESP32_Pin_Dev.jpg" data-canonical-src="https://github.com/jeng37/Total-Control-app-to-HA/blob/main/ESP32_Pin_Def.jpg width="800" height="800" />
 
 Then connect with putty, serial port of usb2uart, baud rate 115200.
 
@@ -61,5 +61,5 @@ changed some variables and it´s running.
    
 My Stove model is "Extraflame Diadema IDRO"
 
-[Diadema_IDRO] Home Assistant (https://github.com/jeng37/Total-Control-app-to-HA/blob/main/Diadema_IDRO.jpg)
+<img src="Diadema_IDRO.jpg"  Home Assistant data-canonical-src="https://github.com/jeng37/Total-Control-app-to-HA/blob/main/Diadema_IDRO.jpg" width="800" height="800" />
 
