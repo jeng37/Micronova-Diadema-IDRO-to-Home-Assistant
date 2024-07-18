@@ -55,29 +55,8 @@ Jorre05
 Joris S ](https://github.com/Jorre05/micronova)
 and installed it on a Wemos d1 mini.
 changed some varialbes and it´s running.
-[here] the variables read write locations.
-    Read
-    0x00 RAM
-    0x20 EEPROM
-
-    Write
-    0x80 RAM
-    0xA0 EEPROM
-
-
-   read in RAM address: 0000 value: 0x01    // Read Temperature
-   read in RAM address: 0000 value: 0x5A    // Read Temperature Fume
-   read in RAM address: 0000 value: 0x34    // Read Stove power
-   read in RAM address: 0000 value: 0x37    // Read stove fan speed
-   read in RAM address: 0000 value: 0x01    // Read water Temperature
-   read in RAM address: 0000 value: 0x3C    // Read water pressure
-
-   write in RAM address: 00E8 value:85      // Send ON
-   write in RAM address: 00E8 value:85      // Send OFF
- 
-   write in EEP address: 000C value:65      // Change H2o temperature value to 65 degres
-   read in EEP address: 0x20 value: 0x0C    // H2o temperature set
-   write in EEP address: 0085 value:1       // Change stove pover to 1 (1 to 5)
+[Diadema_IDRO](https://github.com/jeng37/Total-Control-app-to-HA/blob/main/Diadema_IDRO.txt) the ead write locations.
+   
    
 My Stove model is "Extraflame Diadema IDRO"
 
