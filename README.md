@@ -55,7 +55,8 @@ Jorre05
 Joris S ](https://github.com/Jorre05/micronova)
 and installed it on a Wemos d1 mini.
 changed some variables and it´s running.
-[Diadema_IDRO](https://github.com/jeng37/Total-Control-app-to-HA/blob/main/Diadema_IDRO.txt) the read write locations.
+
+[Diadema_IDRO](https://github.com/jeng37/Total-Control-app-to-HA/blob/main/Diadema_IDRO.txt) read write locations.
    
    
 My Stove model is "Extraflame Diadema IDRO"
