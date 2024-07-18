@@ -17,7 +17,7 @@ http://wifi.extraflame.it
 I opened the wifi adapter (white label).
 And found 3 pins on the ESP32.
 
-<img src="ESP32_Pins.jpg" data-canonical-src="https://github.com/jeng37/Total-Control-app-to-HA/blob/main/ESP32_Pins.jpg" width="400" height="400" />
+<img src="ESP32_Pins.jpg" data-canonical-src="https://github.com/jeng37/Total-Control-app-to-HA/blob/main/ESP32_Pins.jpg" width="800" height="800" />
 
 GND is drawn, just need to find rx and tx.
 So in my case now (Blue = GND, Orange = RX, Yellow = TX)
