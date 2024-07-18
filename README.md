@@ -24,15 +24,15 @@ So in my case now (Blue = GND, Orange = RX, Yellow = TX)
 You need a 3.3v usb2uart.
 Note (green is not connected)
 
-[ESP32_Usb2UART](Total-Control-app-to-HA/ESP32_Usb2UART.jpg)
+[ESP32_Usb2UART](https://github.com/jeng37/Total-Control-app-to-HA/blob/main/ESP32_Usb2UART.jpg)
 
-[usb2uart_Pin_Def](ESP32_Pin_Def.jpg)
+[usb2uart_Pin_Def](https://github.com/jeng37/Total-Control-app-to-HA/blob/main/ESP32_Pin_Def.jpg)
 
 Then connect with putty, serial port of usb2uart, baud rate 115200.
 
 I was very surprised that it is an esp32 wroom and there is a partition with spiffs.
 
-[extraflame.txt](extraflame.txt)
+[extraflame.txt](https://github.com/jeng37/Total-Control-app-to-HA/blob/main/extraflame.txt)
 
 
 Unfortunately I can't make a backup of the esp. I always get the error message
@@ -56,10 +56,10 @@ Joris S ](https://github.com/Jorre05/micronova)
 and installed it on a Wemos d1 mini.
 changed some variables and it´s running.
 
-[Diadema_IDRO](Diadema_IDRO.txt) read write locations.
+[Diadema_IDRO](https://github.com/jeng37/Total-Control-app-to-HA/blob/main/Diadema_IDRO.txt) read write locations.
    
    
 My Stove model is "Extraflame Diadema IDRO"
 
-[Diadema_IDRO](Diadema_IDRO.jpg)
+[Diadema_IDRO](https://github.com/jeng37/Total-Control-app-to-HA/blob/main/Diadema_IDRO.jpg)
 
