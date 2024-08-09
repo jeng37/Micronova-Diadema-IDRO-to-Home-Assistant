@@ -63,3 +63,117 @@ My Stove model is "Extraflame Diadema IDRO"
 
 <img src="Diadema_IDRO.jpg"  Home Assistant data-canonical-src="https://github.com/jeng37/Total-Control-app-to-HA/blob/main/Diadema_IDRO.jpg" width="800" height="400" />
 
+<br>News:
+<br>Added a pellet level sensor.</br>
+
+<br>Hardware components:
+<br>Wemos D1 Mini and HC-SR04 ultrasonic sensor.
+<br>HC-SR04: 
+         <br>Vcc to wemos 5v
+         <br>Trig to wemos pin D4
+         <br>Echo to wemos pin D3
+         <br>Gnd to wemos Gnd
+
+<br>Reed sensor: A magnetic switch that closes when a magnet approaches and opens when it moves away.
+LED: A simple LED controlled via a GPIO pin of the ESP8266/ESP32.
+Resistor: A 220-330 ohm resistor in series with the LED to limit the current.
+ESP8266/ESP32: A microcontroller powered by ESPHome.
+Wiring:
+Reed sensor:
+
+A reed sensor pin to GND.
+The other pin to a digital GPIO pin of the ESP (e.g. GPIO14) and at the same time to 3.3V via a pull-up resistor (approx. 10k Ohm).
+LED:
+
+Anode (longer pin) of the LED to a GPIO pin of the ESP (e.g. GPIO5) via a 220-330 ohm resistor.
+Cathode (shorter pin) of the LED to GND.
+
+Code:
+<pre><code>
+esphome:
+  name: pelletlevel
+  friendly_name: PelletLevel
+
+esp8266:
+  board: d1_mini
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+ota:
+  - platform: esphome
+    password: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  manual_ip:
+    static_ip: 192.x.x.x
+    gateway: 192.x.x.x
+    subnet: 255.x.x.x
+    dns1: 192.x.x.x  
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Pelletslevel Fallback Hotspot"
+    password: "xxxxxxxxxxxxx"
+
+captive_portal:
+
+sensor:
+  - platform: ultrasonic
+    trigger_pin: D4
+    echo_pin: D3
+  
+    name: "pellet level in percent"
+    update_interval: 30s
+# Optional variables:
+   
+    icon: "mdi:sack-percent"
+    accuracy_decimals: 0      
+    filters:
+    # Calculates in %
+    # Replace 0.46 by the height of hopper. From the sensor to the bottom.
+    # I used this website to know how I should multiply my values :https://www.skillsyouneed.com/num/percent-change.html 
+    - lambda: return (0.67-x)*(100/0.67);
+    unit_of_measurement: "%"
+         
+# Reed switch configuration
+binary_sensor:
+  - platform: gpio
+    pin: GPIO14
+    name: "Reed Sensor"
+    device_class: door
+    on_press:
+      then:
+        - switch.turn_on: led_switch
+        - lambda: |-
+            if (id(led_switch).state) {
+              ESP_LOGD("Reed Sensor", "LED is ON");
+            } else {
+              ESP_LOGD("Reed Sensor", "LED is OFF");
+            }
+    on_release:
+      then:
+        - switch.turn_off: led_switch
+        - lambda: |-
+            if (id(led_switch).state) {
+              ESP_LOGD("Reed Sensor", "LED is ON");
+            } else {
+              ESP_LOGD("Reed Sensor", "LED is OFF");
+            }
+# LED configuration
+switch:
+  - platform: gpio
+    pin: GPIO5
+    id: led_switch
+    name: "LED"
+
+
+</code></pre>
+
