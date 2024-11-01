@@ -1,6 +1,6 @@
 Diadema IDRO / Total Control app / uncloud to Home Assistant
 
-"uncloud" La Nordica Extraflame Dadema IDRO / NAVEL 2.0 Wifi Modul to Home Assistant.
+"uncloud" La Nordica Extraflame Diadema IDRO / NAVEL 2.0 Wifi Modul to Home Assistant.
 
 What has happened so far.
 
