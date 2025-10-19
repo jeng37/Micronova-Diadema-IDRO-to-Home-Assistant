@@ -1,0 +1,107 @@
+packages:
+  # Order matters!!! First has more priority then later ones
+  # highest priority (after config in this file)
+  # ....
+  # lowest priority (should be device base)
+ base: !include devices/micronova.yaml 
+ # in this file the esphome, api, wifi config is#
+ 
+external_components:
+  # - source: github://Jorre05/micronova
+    - source: components
+      components: [ micronova ]
+
+
+web_server:
+  auth:
+    username: !secret web_server_username
+    password: !secret web_server_password
+  version: 3
+  sorting_groups:
+    - id: sorting_group_number_settings
+      name: "Number settings"
+      sorting_weight: 20
+    - id: sorting_group_fan_controls
+      name: "Fan Controls"
+      sorting_weight: 10 
+
+
+uart:
+  tx_pin: D4
+  rx_pin: D3
+  baud_rate: 1200
+  stop_bits: 2
+
+micronova:
+  enable_rx_pin: D2
+  update_interval: 20s
+  serial_reply_delay: 100ms
+
+text_sensor:
+  - platform: micronova
+    stove_state:
+      name: Stove status
+
+number:
+  - platform: micronova
+
+    thermostat_temperature:
+      name: H2o temperature
+      step: 1
+    power_level:
+      #memory_location: 0x20
+      #memory_address: 0x85
+      name: Power level
+      max_value: 5
+
+sensor:
+  - platform: micronova
+    room_temperature:
+      name: H2o temperature set
+    fumes_temperature:
+      name: Fumes temperature
+    stove_power:
+      name: Stove power level
+      memory_location: 0x20
+      memory_address: 0x85
+    fan_speed:
+      fan_rpm_offset: 240
+      name: Fan RPM
+    water_temperature:
+      name: Water temperature
+      memory_location: 0x00
+      memory_address: 0x01
+    water_pressure:
+      name: Water pressure
+    memory_address_sensor:
+      memory_location: 0x00
+      memory_address: 0x73
+      name: Intake air Temperature
+    memory_address_sensor1:
+      memory_location: 0x00
+      memory_address: 0x00
+      name: Custom Address sensor1
+   # memory_address_sensor2:
+   #   memory_location: 0x20
+   #   memory_address: 0x7C
+   #   name: H2o temperature set
+
+      #filters:
+      #  - lambda: return ((int)x & 0x0F) * 10; # 0x8;
+      # See docs
+     # - lambda: return ((int)x & 0x0F) - 0x8;
+
+switch:
+   - platform: micronova
+     stove:
+      name: Stove on/off switch
+   - platform: restart
+     name: "Micronova Restart"
+ 
+button:
+  - platform: micronova
+    custom_button:
+      name: Custom button
+      memory_location: 0xA0
+      memory_address: 0x0C
+      memory_data: 0x41
