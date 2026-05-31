@@ -177,3 +177,27 @@ switch:
 
 </code></pre>
 
+
+---
+
+## 🕹️ Live Nostalgia BBS
+
+Want to see this in action?
+
+Connect to the old-school PCBoard BBS:
+
+```text
+Host: mybbs.duckdns.org
+Port: 2323
+Protocol: Telnet
+```
+
+Example:
+
+```bash
+telnet mybbs.duckdns.org 2323
+```
+
+Best experienced with an ANSI-capable terminal such as SyncTERM, ZOC, NetRunner, or any classic Telnet/ANSI client.
+
+> Nostalgia mode: real old-style PCBoard BBS experience.
